@@ -9,10 +9,10 @@ This report aims to analyze carbon emissions to examine the carbon footprint acr
 Table 'product_emissions'
 
 
-##2. Data Explore
+##2.Data Explore
 dem bao nhiu sp, distinct sp
 
-##3. Data Analysis
+##3.Data Analysis
 1. Which products contribute the most to carbon emissions?
 ```sql
 SELECT product_name, ROUND(AVG(carbon_footprint_pcf),2) AS 'Average PCF'
