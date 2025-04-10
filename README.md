@@ -145,27 +145,27 @@ SELECT
     	CASE
 	    	WHEN product_emissions.year = 2013
     		THEN product_emissions.upstream_percent_total_pcf ELSE 0
-    	END), 2) AS emissions_2013,
+    	END), 2) AS 'emissions_2013',
     ROUND(SUM(
     	CASE 
 	    	WHEN product_emissions.year = 2014
 	    	THEN product_emissions.upstream_percent_total_pcf ELSE 0 
-	    END), 2) AS emissions_2014,
+	    END), 2) AS 'emissions_2014',
     ROUND(SUM(
     	CASE 
 	    	WHEN product_emissions.year = 2015 
 	    	THEN product_emissions.upstream_percent_total_pcf ELSE 0 
-	    END), 2) AS emissions_2015,
+	    END), 2) AS 'emissions_2015',
     ROUND(SUM(
     	CASE 
 	    	WHEN product_emissions.year = 2016 
 	    	THEN product_emissions.upstream_percent_total_pcf ELSE 0 
-	    END), 2) AS emissions_2016,
+	    END), 2) AS 'emissions_2016',
     ROUND(SUM(
     	CASE 
 	    	WHEN product_emissions.year = 2017 
 	    	THEN product_emissions.upstream_percent_total_pcf ELSE 0 
-	    END), 2) AS emissions_2017
+	    END), 2) AS 'emissions_2017'
 FROM 
     product_emissions
 LEFT JOIN 
@@ -173,7 +173,7 @@ LEFT JOIN
 GROUP BY 
     industry_groups.industry_group
 ORDER BY 
-    emissions_2013, emissions_2014, emissions_2015, emissions_2016, emissions_2017;
+    'emissions_2013', 'emissions_2014', 'emissions_2015', 'emissions_2016', 'emissions_2017';
 ```
 The Result:
 |industry_group|emissions_2013|emissions_2014|emissions_2015|emissions_2016|emissions_2017|
