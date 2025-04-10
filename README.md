@@ -143,7 +143,7 @@ SELECT
     industry_groups.industry_group AS industry_group,
     ROUND(SUM(
     	CASE
-	    	WHEN product_emissions.year = 2013
+		WHEN product_emissions.year = 2013
     		THEN product_emissions.upstream_percent_total_pcf ELSE 0
     	END), 2) AS 'emissions_2013',
     ROUND(SUM(
