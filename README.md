@@ -112,6 +112,7 @@ The Result:
 |"PepsiCo, Inc."|23017.00|
 
 5. What are the countries with the highest contribution to carbon emissions
+![Biểu đồ khí thải CO₂ theo năm](https://docs.google.com/spreadsheets/d/e/2PACX-1vT0F1wQzaXxmD1wQmKzQfnz0UZ6Kwz0kHJ-Q3jKlrktfcxzwx1_7urOgAbRDiYdYZYYVmxBUUHJpYYG/pubchart?oid=1955617728&format=image)
 ```sql
 SELECT countries.country_name,
 	ROUND(SUM(product_emissions.carbon_footprint_pcf),2) AS total_PCF
@@ -174,8 +175,6 @@ GROUP BY
 ORDER BY 
     emissions_2013, emissions_2014, emissions_2015, emissions_2016, emissions_2017;
 ```
-![Biểu đồ khí thải CO₂ theo năm](https://docs.google.com/spreadsheets/d/e/2PACX-1vT0F1wQzaXxmD1wQmKzQfnz0UZ6Kwz0kHJ-Q3jKlrktfcxzwx1_7urOgAbRDiYdYZYYVmxBUUHJpYYG/pubchart?oid=1955617728&format=image)
-
 The Result:
 |industry_group|emissions_2013|emissions_2014|emissions_2015|emissions_2016|emissions_2017|
 |--------------|--------------|--------------|--------------|--------------|--------------|
