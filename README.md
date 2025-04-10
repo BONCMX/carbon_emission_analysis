@@ -112,7 +112,6 @@ The Result:
 |"PepsiCo, Inc."|23017.00|
 
 5. What are the countries with the highest contribution to carbon emissions
-![Biểu đồ khí thải CO₂ theo năm](https://docs.google.com/spreadsheets/d/e/2PACX-1vT0F1wQzaXxmD1wQmKzQfnz0UZ6Kwz0kHJ-Q3jKlrktfcxzwx1_7urOgAbRDiYdYZYYVmxBUUHJpYYG/pubchart?oid=1955617728&format=image)
 ```sql
 SELECT countries.country_name,
 	ROUND(SUM(product_emissions.carbon_footprint_pcf),2) AS total_PCF
@@ -138,6 +137,7 @@ The Result:
 |Netherlands|23017.00|
 
 6. What is the trend of carbon footprints (PCFs) over the years
+   ![Biểu đồ khí thải CO₂ theo năm](https://docs.google.com/spreadsheets/d/e/2PACX-1vT0F1wQzaXxmD1wQmKzQfnz0UZ6Kwz0kHJ-Q3jKlrktfcxzwx1_7urOgAbRDiYdYZYYVmxBUUHJpYYG/pubchart?oid=1955617728&format=image)
 ```sql
 SELECT 
     industry_groups.industry_group AS industry_group,
