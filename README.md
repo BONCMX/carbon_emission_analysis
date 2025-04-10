@@ -207,4 +207,6 @@ The Result:
 |Technology Hardware & Equipment|1539.82|1368.13|1891.58|1361.01|245.14|
 |Materials|1617.21|1438.12|0.0|653.0|771.48|
 |"Food, Beverage & Tobacco"|1677.71|420.64|0.0|439.67|263.53|
-[https://docs.google.com/spreadsheets/d/1Z5EOvYZ0qlR_RXDOPSsKyux7xsP8TZ8-jwXuA8HJPsc/edit?usp=sharing](https://docs.google.com/spreadsheets/d/e/2PACX-1vT0F1wQzaXxmD1wQmKzQfnz0UZ6Kwz0kHJ-Q3jKlrktfcxzwx1_7urOgAbRDiYdYZYYVmxBUUHJpYYG/pubchart?oid=1955617728&format=image)
+
+![Biểu đồ khí thải CO₂ theo năm](https://docs.google.com/spreadsheets/d/e/2PACX-1vT0F1wQzaXxmD1wQmKzQfnz0UZ6Kwz0kHJ-Q3jKlrktfcxzwx1_7urOgAbRDiYdYZYYVmxBUUHJpYYG/pubchart?oid=1955617728&format=image)
+
