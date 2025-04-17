@@ -9,7 +9,7 @@ The dataset consists of 4 tables containing information regarding carbon emissio
 ![image](https://github.com/user-attachments/assets/f9425480-d90a-4803-a38e-075de78bac4f)
 
 ## 1.2 Data structure
-Table 'product_emissions'
+### Table 'product_emissions'
 ```sql
 SELECT * FROM product_emissions pe LIMIT 10;
 ```
@@ -27,7 +27,7 @@ SELECT * FROM product_emissions pe LIMIT 10;
 |10661-10-2015|85|28|6|2015|Regular Straight 505® Jeans – Steel (Water<Less™)|0.7665|15|N/a (product with insufficient stage-level data)|N/a (product with insufficient stage-level data)|N/a (product with insufficient stage-level data)|
 
 
-Table 'industry_groups'
+###Table 'industry_groups'
 ```slq
 SELECT * FROM industry_groups LIMIT 10;
 ```
@@ -45,7 +45,7 @@ SELECT * FROM industry_groups LIMIT 10;
 |10|Commercial & Professional Services|
 
 
-Table 'companies'
+### Table 'companies'
 ```slq
 SELECT * FROM companies LIMIT 10;
 ```
@@ -63,7 +63,7 @@ SELECT * FROM companies LIMIT 10;
 |10|"Gamesa Corporación Tecnológica, S.A."|
 
 
-Table 'countries'
+### Table 'countries'
 ```slq
 SELECT * FROM countries LIMIT 10;
 ```
