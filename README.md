@@ -9,7 +9,7 @@ The dataset consists of 4 tables containing information regarding carbon emissio
 ![image](https://github.com/user-attachments/assets/f9425480-d90a-4803-a38e-075de78bac4f)
 
 ## 1.2 Data structure
-### Table 'product_emissions'
+#H1 Table 'product_emissions'
 ```sql
 SELECT * FROM product_emissions pe LIMIT 10;
 ```
