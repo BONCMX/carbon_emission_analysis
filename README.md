@@ -28,7 +28,7 @@ The Result:
 |10661-10-2015|85|28|6|2015|Regular Straight 505® Jeans – Steel (Water<Less™)|0.7665|15|N/a (product with insufficient stage-level data)|N/a (product with insufficient stage-level data)|N/a (product with insufficient stage-level data)|
 
 
-###Table 'industry_groups'
+### Table 'industry_groups'
 ```slq
 SELECT * FROM industry_groups LIMIT 10;
 ```
