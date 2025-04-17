@@ -44,6 +44,7 @@ SELECT * FROM industry_groups LIMIT 10;
 |9|Chemicals|
 |10|Commercial & Professional Services|
 
+
 Table 'companies'
 ```slq
 SELECT * FROM companies LIMIT 10;
@@ -60,6 +61,7 @@ SELECT * FROM companies LIMIT 10;
 |8|"Elitegroup computer systems co., Ltd."|
 |9|"Fuji Xerox Co., Ltd."|
 |10|"Gamesa Corporación Tecnológica, S.A."|
+
 
 Table 'countries'
 ```slq
@@ -116,12 +118,13 @@ LIMIT 10;
 Duplicate result
 ```sql
 SELECT COUNT(product_name) AS 'Total number of product',
-	   COUNT(DISTINCT product_name) AS 'Number of unique product'
+       COUNT(DISTINCT product_name) AS 'Number of unique product'
 FROM product_emissions pe;
 ```
 |Total number of product|Number of unique product|
 |-----------------------|------------------------|
 |1037|661|
+
 
 ## 3.Data Analysis
 1. Which products contribute the most to carbon emissions?
