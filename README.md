@@ -127,7 +127,7 @@ FROM product_emissions pe;
 
 
 ## 3.Data Analysis
-1. Which products contribute the most to carbon emissions?
+### 1. Which products contribute the most to carbon emissions?
 ```sql
 SELECT product_name, ROUND(AVG(carbon_footprint_pcf),2) AS 'Average PCF'
 FROM product_emissions
@@ -148,7 +148,7 @@ The Result:
 |Mercedes-Benz S-Class (S 500)|85000.00|
 |Mercedes-Benz SL (SL 350)|72000.00|
 
-2.What are the industry groups of these products?
+### 2.What are the industry groups of these products?
 ```sql
 SELECT product_emissions.industry_group_id,
 	   industry_groups.industry_group,
@@ -175,7 +175,7 @@ The Result:
 |7|Automobiles & Components|Mercedes-Benz S-Class (S 500)|85000.00|
 |7|Automobiles & Components|Mercedes-Benz SL (SL 350)|72000.00|
 
-3. What are the industries with the highest contribution to carbon emissions?
+### 3. What are the industries with the highest contribution to carbon emissions?
 ```sql
 SELECT industry_groups.industry_group,
 ROUND(SUM(product_emissions.carbon_footprint_pcf),2) AS total_PCF
@@ -200,7 +200,7 @@ The Result:
 |Software & Services|46544.00|
 |Media|23017.00|
 
-4. What are the companies with the highest contribution to carbon emissions
+### 4. What are the companies with the highest contribution to carbon emissions
 ```sql
 SELECT companies.company_name,
 	ROUND(SUM(product_emissions.carbon_footprint_pcf),2) AS total_PCF
@@ -225,7 +225,7 @@ The Result:
 |"Staples, Inc."|46544.00|
 |"PepsiCo, Inc."|23017.00|
 
-5. What are the countries with the highest contribution to carbon emissions
+### 5. What are the countries with the highest contribution to carbon emissions
 ```sql
 SELECT countries.country_name,
 	ROUND(SUM(product_emissions.carbon_footprint_pcf),2) AS total_PCF
@@ -250,7 +250,7 @@ The Result:
 |Sweden|46544.00|
 |Netherlands|23017.00|
 
-6. What is the trend of carbon footprints (PCFs) over the years
+### 6. What is the trend of carbon footprints (PCFs) over the years
    ![Biểu đồ khí thải CO₂ theo năm](https://docs.google.com/spreadsheets/d/e/2PACX-1vT0F1wQzaXxmD1wQmKzQfnz0UZ6Kwz0kHJ-Q3jKlrktfcxzwx1_7urOgAbRDiYdYZYYVmxBUUHJpYYG/pubchart?oid=1955617728&format=image)
 ```sql
 SELECT industry_groups.industry_group AS industry_group,
