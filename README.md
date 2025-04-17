@@ -13,6 +13,7 @@ The dataset consists of 4 tables containing information regarding carbon emissio
 ```sql
 SELECT * FROM product_emissions pe LIMIT 10;
 ```
+The Result:
 |id|company_id|country_id|industry_group_id|year|product_name|weight_kg|carbon_footprint_pcf|upstream_percent_total_pcf|operations_percent_total_pcf|downstream_percent_total_pcf|
 |--|----------|----------|-----------------|----|------------|---------|--------------------|--------------------------|----------------------------|----------------------------|
 |10056-1-2014|82|28|2|2014|Frosted Flakes(R) Cereal|0.7485|2|57.50|30.00|12.50|
@@ -31,6 +32,7 @@ SELECT * FROM product_emissions pe LIMIT 10;
 ```slq
 SELECT * FROM industry_groups LIMIT 10;
 ```
+The Result:
 |id|industry_group|
 |--|--------------|
 |1|"Consumer Durables, Household and Personal Products"|
@@ -49,6 +51,7 @@ SELECT * FROM industry_groups LIMIT 10;
 ```slq
 SELECT * FROM companies LIMIT 10;
 ```
+The Result:
 |id|company_name|
 |--|------------|
 |1|"Autodesk, Inc."|
@@ -67,6 +70,7 @@ SELECT * FROM companies LIMIT 10;
 ```slq
 SELECT * FROM countries LIMIT 10;
 ```
+The Result:
 |id|country_name|
 |--|------------|
 |1|Australia|
@@ -82,7 +86,7 @@ SELECT * FROM countries LIMIT 10;
 
 
 ## 2.Data Explore
-Data duplicate
+### Data duplicate
 ```slq
 SELECT *,
 	COUNT(*) AS duplicate_count
@@ -102,6 +106,7 @@ GROUP BY
 HAVING COUNT(*) > 1
 LIMIT 10;
 ```
+The Result:
 |id|company_id|country_id|industry_group_id|year|product_name|weight_kg|carbon_footprint_pcf|upstream_percent_total_pcf|operations_percent_total_pcf|downstream_percent_total_pcf|duplicate_count|
 |--|----------|----------|-----------------|----|------------|---------|--------------------|--------------------------|----------------------------|----------------------------|---------------|
 |10056-1-2014|82|28|2|2014|Frosted Flakes(R) Cereal|0.7485|2|57.50|30.00|12.50|2|
@@ -115,12 +120,13 @@ LIMIT 10;
 |10661-1-2014|85|28|11|2014|501® Original Jeans – Dark Stonewash|0.997|16|N/a (product with insufficient stage-level data)|N/a (product with insufficient stage-level data)|N/a (product with insufficient stage-level data)|2|
 |10661-1-2015|85|28|6|2015|501® Original Jeans – Dark Stonewash|0.997|16|N/a (product with insufficient stage-level data)|N/a (product with insufficient stage-level data)|N/a (product with insufficient stage-level data)|2|
 
-Duplicate result
+### Duplicate result
 ```sql
 SELECT COUNT(product_name) AS 'Total number of product',
        COUNT(DISTINCT product_name) AS 'Number of unique product'
 FROM product_emissions pe;
 ```
+The Result:
 |Total number of product|Number of unique product|
 |-----------------------|------------------------|
 |1037|661|
