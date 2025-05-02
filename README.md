@@ -328,4 +328,43 @@ The Result:
 |Materials|1617.21|1438.12|0.0|653.0|771.48|
 |"Food, Beverage & Tobacco"|1677.71|420.64|0.0|439.67|263.53|
 
+### 7 Which industry groups has demonstrated the most notable decrease in carbon footprints (PCFs) over time?
+```sql
+SELECT 
+  a.industry_group,
+  a.avg_pcf AS pcf_2013,
+  b.avg_pcf AS pcf_2017,
+  ROUND(a.avg_pcf - b.avg_pcf, 2) AS diff
+FROM (
+    SELECT 
+      ig.industry_group,
+      ROUND(AVG(pe.carbon_footprint_pcf), 2) AS avg_pcf
+    FROM product_emissions pe
+    JOIN industry_groups ig ON pe.industry_group_id = ig.id
+    WHERE pe.year = 2013
+    GROUP BY ig.industry_group
+) a
+JOIN (
+    SELECT 
+      ig.industry_group,
+      ROUND(AVG(pe.carbon_footprint_pcf), 2) AS avg_pcf
+    FROM product_emissions pe
+    JOIN industry_groups ig ON pe.industry_group_id = ig.id
+    WHERE pe.year = 2017
+    GROUP BY ig.industry_group
+) b
+ON a.industry_group = b.industry_group
+ORDER BY diff DESC;
+```
+The Result:
+|industry_group|pcf_2013|pcf_2017|diff|
+|--------------|--------|--------|----|
+|Technology Hardware & Equipment|1053.45|788.34|265.11|
+|"Food, Beverage & Tobacco"|94.25|143.73|-49.48|
+|Commercial & Professional Services|144.63|370.50|-225.87|
+|Software & Services|1.50|690.00|-688.50|
+|Materials|4177.35|11217.74|-7040.39|
+|Capital Goods|5015.83|18989.80|-13973.97|
+
+
 
