@@ -366,5 +366,14 @@ The Result:
 |Materials|4177.35|11217.74|-7040.39|
 |Capital Goods|5015.83|18989.80|-13973.97|
 
+## 4. Insight
+## 🔎 Key Insights from Analysis
+
+- ✅ The **Energy sector** has made the most notable progress in reducing average PCF between 2013 and 2017.
+- ❗ The **Pharmaceutical industry**, while essential for public health, remains one of the top emitters in terms of carbon footprint per product.
+- 📦 In many product categories, **upstream emissions** account for over 50% of total PCF – suggesting that **material sourcing and logistics** are the real levers for impact.
+- 🌍 Some countries produce the same products with significantly lower emissions – which opens the door to **carbon-smart supply chain planning**.
+- ⚠️ The **Utilities sector** shows a mild increase in PCF, contrary to the global trend – indicating a need for closer observation or policy shift.
+- 🧠 Not all heavy products emit heavily. Some lightweight, high-tech products are extremely carbon-intensive – hence the need to evaluate emissions per **function or economic output**.
 
 
