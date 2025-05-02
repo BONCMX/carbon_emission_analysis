@@ -366,6 +366,7 @@ The Result:
 |Materials|4177.35|11217.74|-7040.39|
 |Capital Goods|5015.83|18989.80|-13973.97|
 
+
 ## 4. Insight
 ## 🔎 Key Insights from Analysis
 
